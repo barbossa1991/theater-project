@@ -1,0 +1,41 @@
+body {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    background-color: $black;
+    color: #fff;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: $gold;
+    padding: 13px 67px 13px 67px;
+}
+.color-text {
+    color: $gold;
+    margin-right: 10px;
+}
