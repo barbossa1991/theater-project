@@ -7,6 +7,7 @@ $(function () {
 
     $('.productions__slider').slick({
         slidesToShow: 4,
+        arrows: false
     });
 
 });

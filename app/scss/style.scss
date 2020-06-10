@@ -220,16 +220,37 @@
     max-width: 442px;
     min-height: 550px;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.4;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
 }
-.productions__slider .slick-current {
-    opacity: none;
+.productions__slider .slick-current .productions__slider-item {
+    opacity: 1;
 }
 .productions__slider {
     margin-left: 150px;
 }
 .productions__slider-search {
     display: none;
+}
+.productions__slider-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.productions__slider-date {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    opacity: 1;
 }
 
 
