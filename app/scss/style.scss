@@ -207,7 +207,8 @@
 .productions {
     margin-bottom: 150px;
 }
-.productions__title {
+.productions__title,
+.partners__title {
     font-weight: 300;
     font-size: 48px;
     line-height: 65px;
@@ -338,6 +339,25 @@
         line-height: 54px;
     }
 }
+.partners {
+    margin-bottom: 150px;
+}
+.partners__logos {
+    max-width: 1034px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.partners__logos-top,
+.partners__logos-bottom {
+    img + img {
+        margin-left: 74px;
+    }
+}
+.partners__logos-top {
+    margin-bottom: 80px;
+}
+
 
 
 
