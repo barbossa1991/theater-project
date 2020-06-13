@@ -14,6 +14,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    position: relative;
 }
 .header-top {
     display: flex;
@@ -467,7 +468,80 @@ textarea {
         color: #989898;
     }
 }
-
+.header-sidebar {
+    position: absolute;
+    max-width: 150px;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(#1C2121, .75);
+}
+.header-sidebar__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    transform: rotate(-90deg);
+    width: 410px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 235px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 3px;
+        background-color: #fff;
+        top: 12px;
+        left: 0;
+    }
+}
+.icons-block {
+    max-width: 26px;
+    min-height: 174px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 86px;
+    a + a {
+        margin-top: 30px;
+    }
+}
+.icon-instagram {
+    &::before {
+        content: "\f16d";
+        font-family: 'icomoon';
+        color: $gold;
+        font-size: 26px;
+    }
+}
+.icon-facebook {
+    &::before {
+        content: "\f09a";
+        font-family: 'icomoon';
+        font-size: 26px;
+    }
+}
+.icon-vk {
+    &::before {
+        content: "\f189";
+        font-family: 'icomoon';
+        font-size: 26px;
+    }
+}
+.icon-youtube {
+    &::before {
+        content: "\f16a";
+        font-family: 'icomoon';
+        font-size: 26px;
+    }
+}
 
 
 
