@@ -40,7 +40,9 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    border-bottom: 2px solid $gold;
+    a {
+        border-bottom: 2px solid $gold;
+    }
 }
 .header-content {
     display: flex;
@@ -224,26 +226,28 @@
     max-width: 532px;
     min-height: 550px;
     width: 100%;
+}
+.productions__slider .slick-current .productions__slider-inner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-.productions__slider .slick-current .productions__slider-inner {
-    background: rgba(#1C2121, .3);
-    .productions__slider-search {
-        display: block;
-    }
-    .productions__slider-title {
-        display: none;
-    }
-    .productions__slider-date {
-        display: none;
+    .inner-box {
+        background: rgba(#1C2121, .3);
+        .productions__slider-search {
+            display: block;
+        }
+        .productions__slider-title {
+            display: none;
+        }
+        .productions__slider-date {
+            display: none;
+        }
     }
 }
 .productions__slider {
     margin-left: 250px;
 }
-.productions__slider-inner {
+.inner-box {
     position: relative;
     max-width: 532px;
     min-height: 550px;
@@ -484,18 +488,18 @@ textarea {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #C4C4C4;
     transform: rotate(-90deg);
-    width: 410px;
+    width: 362px;
     position: relative;
     text-align: right;
-    margin-bottom: 235px;
+    margin-bottom: 210px;
     &::before {
         content: "";
         position: absolute;
-        width: 90px;
+        width: 80px;
         height: 3px;
         background-color: #fff;
         top: 12px;
@@ -540,6 +544,21 @@ textarea {
         content: "\f16a";
         font-family: 'icomoon';
         font-size: 26px;
+    }
+}
+.menu-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    &__inner {
+        width: 50px;
+    }
+    &__line {
+        height: 5px;
+        background-color: $gold;
+        margin-bottom: 10px;
     }
 }
 

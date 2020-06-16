@@ -7,7 +7,31 @@ $(function () {
 
     $('.productions__slider').slick({
         slidesToShow: 4,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 998,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+            	breakpoint: 800,
+            	settings: {
+            		slidesToShow: 2
+            	}
+            },
+            {
+            	breakpoint: 600,
+            	settings: {
+            		slidesToShow: 1
+            	}
+            }
+        ]
     });
+
+    $('.menu-btn').on('click', function () {
+    	$('.header-top__list').slideToggle();
+    })
 
 });
