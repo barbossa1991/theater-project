@@ -355,10 +355,13 @@
     flex-direction: column;
     margin: 0 auto;
 }
-.partners__logos-top,
-.partners__logos-bottom {
-    img + img {
-        margin-left: 74px;
+.partners__logos-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
 .partners__logos-top {

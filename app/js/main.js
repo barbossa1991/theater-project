@@ -16,22 +16,22 @@ $(function () {
                 }
             },
             {
-            	breakpoint: 800,
-            	settings: {
-            		slidesToShow: 2
-            	}
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2
+                }
             },
             {
-            	breakpoint: 600,
-            	settings: {
-            		slidesToShow: 1
-            	}
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
             }
         ]
     });
 
     $('.menu-btn').on('click', function () {
-    	$('.header-top__list').slideToggle();
+        $('.header-top__list').slideToggle();
     })
 
 });
